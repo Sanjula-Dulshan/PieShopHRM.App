@@ -8,5 +8,8 @@ namespace PieShopHRM.App.Pages
         {
             typeof(EmployeeCountWidget), typeof(InboxWidget)
         };
+
+        private readonly string Title = "Home";
+
     }
 }

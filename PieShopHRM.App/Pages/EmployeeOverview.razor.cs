@@ -7,6 +7,7 @@ namespace PieShopHRM.App.Pages
     {
         public List<Employee>? Employees { get; set; } = default;
         private Employee? _selectedEmployee;
+        private readonly string Title = "Employee Overview";
 
         protected override void OnInitialized()
         {

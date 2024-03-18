@@ -9,6 +9,9 @@ namespace PieShopHRM.App.Pages
         [Parameter]
         public string EmployeeId { get; set; }
         public Employee? Employee { get; set; } = new Employee();
+
+        private readonly string Title = "Employee Details";
+
         protected override Task OnInitializedAsync()
         {
             Employee = MockDataService.Employees.FirstOrDefault(e => e.EmployeeId == int.Parse(EmployeeId));
